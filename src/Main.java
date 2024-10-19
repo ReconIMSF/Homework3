@@ -51,26 +51,26 @@ public class Main {
         //Задание 4
         byte bottleProdCap = 16;
         byte time1 = 2;
-        int bottleProdCap1 = bottleProdCap * time1;
+        int bottleMinuteCap = bottleProdCap / time1;
         String time1N = "2 минуты";
         byte time2 = 20;
-        int bottleProdCap2 = bottleProdCap * time2;
+        int bottleProdCap1 = bottleMinuteCap * time2;
         String time2N = "20 минут";
         short time3 = 60*24;
-        int bottleProdCap3 = bottleProdCap * time3;
+        int bottleProdCap2 = bottleMinuteCap * time3;
         String time3N = "сутки";
         short time4 = 3*60*24;
-        int bottleProdCap4 = bottleProdCap * time4;
+        int bottleProdCap3 = bottleMinuteCap * time4;
         String time4N = "3 дня";
         int time5 = 30*60*24;
-        int bottleProdCap5 = bottleProdCap * time5;
+        int bottleProdCap4 = bottleMinuteCap * time5;
         String time5N = "месяц";
         System.out.println("Задача 4");
-        System.out.println(String.format("За %s машина произвела %d штук бутылок", time1N, bottleProdCap1));
-        System.out.println(String.format("За %s машина произвела %d штук бутылок", time2N, bottleProdCap2));
-        System.out.println(String.format("За %s машина произвела %d штук бутылок", time3N, bottleProdCap3));
-        System.out.println(String.format("За %s машина произвела %d штук бутылок", time4N, bottleProdCap4));
-        System.out.println(String.format("За %s машина произвела %d штук бутылок", time5N, bottleProdCap5));
+        System.out.println(String.format("За %s машина произвела %d штук бутылок", time1N, bottleProdCap));
+        System.out.println(String.format("За %s машина произвела %d штук бутылок", time2N, bottleProdCap1));
+        System.out.println(String.format("За %s машина произвела %d штук бутылок", time3N, bottleProdCap2));
+        System.out.println(String.format("За %s машина произвела %d штук бутылок", time4N, bottleProdCap3));
+        System.out.println(String.format("За %s машина произвела %d штук бутылок", time5N, bottleProdCap4));
 
         //Задание 5
         byte totalPaintCans = 120;
@@ -136,5 +136,7 @@ public class Main {
         System.out.println(String.format("%s теперь получает %f рублей. Годовой доход вырос на %f рублей", M, newMonthWageMasha, diffYearWageMasha));
         System.out.println(String.format("%s теперь получает %f рублей. Годовой доход вырос на %f рублей", D, newMonthWageDenis, diffYearWageDenis));
         System.out.println(String.format("%s теперь получает %f рублей. Годовой доход вырос на %f рублей", K, newMonthWageKristine, diffYearWageKristine));
+
+
     }
 }
